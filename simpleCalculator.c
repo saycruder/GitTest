@@ -1,7 +1,11 @@
 #include <stdio.h>
 
+int multiply(int x, int y){
+	printf("%d * %d = %d", x, y, x * y);
+}
+
 int minus(int x, int y){
-	printf("%d - %d = %d", x, y, x - y);
+	printf("%d - %d = %d\n", x, y, x - y);
 }
 
 
@@ -17,6 +21,7 @@ int main()
 	scanf("%d %d", &x, &y);	
 	plus(x, y);
 	minus(x, y);
+	multiply(x, y);
 	
 	return 0;	
 }
